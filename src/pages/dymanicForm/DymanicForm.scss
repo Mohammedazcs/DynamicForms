@@ -1,0 +1,102 @@
+$background-color: #8bc6ec;
+$background-gradient-color: #9599e2;
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the card within the container */
+  justify-content: center; /* Center the card within the container */
+  gap: 20px;
+  margin: 0;
+  background-color: $background-color;
+  background-image: linear-gradient(135deg, $background-color 0%, $background-gradient-color 100%);
+  border: 1px solid #ddd;
+  overflow: auto; /* Allow the container to scroll when content exceeds its height */
+  padding: 20px;
+  flex: 1;
+
+  .card {
+    position: relative;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff; /* Add a background color to the card */
+    border-radius: 8px; /* Add rounded corners to the card */
+    padding: 20px;
+    //height: 500px; /* Set a fixed height for the card */
+    overflow-y: auto; /* Enable vertical scrolling for the card */
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+      color: #fff;
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      border-radius: 8px;
+    }
+
+    .card-items {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+
+      input[type="text"],
+      input[type="number"],
+      select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 175px;
+
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+    }
+
+    .button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      color:  #fff;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      user-select: none;
+    }
+
+    .remove-items {
+      background-color:#FF6347;
+      &:hover {
+        background-color: #FF4433; /* A slightly darker shade on hover */
+        border-color: #FF4433; 
+      }
+    }
+
+    .add-items {
+      //background-color: #E8E8E8;
+      background-color: #4CAF50;
+      width: 100%;
+      &:hover {
+        background-color: #45A846; /* A slightly darker shade on hover */
+        border-color: #45A846;
+      }
+    }
+  }
+  .toast-container-center {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

@@ -1,8 +1,11 @@
-function App() {
 
+import Dymanicform from "./pages/dymanicForm/Dymanicform"
+function App() {
   return (
-    <div>Hello World</div>
-  )
+<div><Dymanicform/></div>
+
+  );
 }
 
 export default App
+
