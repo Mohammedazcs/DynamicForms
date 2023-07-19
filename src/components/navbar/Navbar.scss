@@ -1,0 +1,34 @@
+
+
+.navbar {
+  background-color: #f0f0f0;
+}
+
+.navbar-list {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: #4a4a4a;
+  gap: 24px;
+  font-weight: 500;
+  position: sticky;
+}
+
+
+.navbar-link {
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color:  #d8d8d8;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
