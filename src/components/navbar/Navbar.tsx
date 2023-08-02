@@ -19,6 +19,12 @@ function NavBar() {
         </li>
 
 
+        <li>
+          <Link to="/tailwindForm" className="navbar-link">
+            Tailwind Form
+          </Link>
+        </li>
+
       </ul>
     </nav>
   );

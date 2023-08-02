@@ -47,7 +47,9 @@ const ImageUploader = () => {
 
       // Check file size
       if (file.size > MAX_FILE_SIZE) {
-        toast.error(`File "${file.name}" exceeds the maximum allowed size of 5MB.`);
+        toast.error(
+          `File "${file.name}" exceeds the maximum allowed size of 5MB.`
+        );
         continue;
       }
 
@@ -114,11 +116,7 @@ const ImageUploader = () => {
       <button onClick={handleCameraClick}>Select Images</button>
       {(images.length === 0 || !fileInputRef.current) && (
         <div className="image-uploader-placeholder" onClick={handleCameraClick}>
-          <img
-            src={noImage}
-            alt="Camera Icon"
-            className="camera-icon"
-          />
+          <img src={noImage} alt="Camera Icon" className="camera-icon" />
         </div>
       )}
       <ToastContainer />
@@ -139,3 +137,5 @@ const ImageUploader = () => {
 };
 
 export default ImageUploader;
+
+

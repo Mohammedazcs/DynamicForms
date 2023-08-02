@@ -2,7 +2,10 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import DynamicForm from "./pages/dymanicForm/Dymanicform";
+import TailwindForm from "./pages/tailwindForm/TailwindForm";
+
 import ImageUploader  from "./pages/imageUploader/ImageUploader";
+import './styles.css';
 
 function App() {
   const Layout = () => {
@@ -31,6 +34,11 @@ function App() {
         {
           path: "/imageUploader",
           element: <ImageUploader />,
+        },
+
+        {
+          path: "/tailwindForm",
+          element: <TailwindForm />
         },
 
       ],
