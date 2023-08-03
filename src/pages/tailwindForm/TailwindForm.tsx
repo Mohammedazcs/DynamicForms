@@ -139,7 +139,10 @@ function TailwindForm() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-11">
+
+
+        <div className="grid grid-cols-2 gap-11"> 
+
           <div>
             <label htmlFor="features" className={labelClassName}>
               Features
@@ -180,6 +183,9 @@ function TailwindForm() {
               })}
             </ul>
           </div>
+
+
+
           <div>
             <label htmlFor="image" className={labelClassName}>
               Gig Images
@@ -188,7 +194,15 @@ function TailwindForm() {
               <ImageUpload files={files} setFile={setFile} />
             </div>
           </div>
+
+
+
+
         </div>
+
+
+
+
         <div className="grid grid-cols-2 gap-11">
           <div>
             <label htmlFor="shortDesc" className={labelClassName}>
