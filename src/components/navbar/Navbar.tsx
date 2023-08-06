@@ -25,6 +25,13 @@ function NavBar() {
           </Link>
         </li>
 
+
+        <li>
+          <Link to="/quizForm" className="navbar-link">
+            Quiz Form
+          </Link>
+        </li>
+
       </ul>
     </nav>
   );
